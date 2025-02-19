@@ -1,0 +1,332 @@
+@import url('https://fonts.googleapis.com/css2?family=Delicious+Handrawn&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+}
+
+header {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background: linear-gradient(to left, pink, white);
+    padding: 20px;
+    font-family: "Delicious Handrawn", serif;
+    color: rgb(248, 249, 243);
+    font-size: 25px;
+    border-bottom: 2px solid rgb(159, 153, 139);
+}
+
+h1 {
+    color: rgb(236, 161, 174);
+}
+
+.div1 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.heart1 {
+    height: 80px;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: rgb(254, 255, 250);
+    text-decoration: none;
+    transition: 0.4s;
+}
+
+nav a:hover {
+    color: rgb(255, 255, 255);
+    text-decoration: line-through;
+    font-size: 31px;
+}
+
+.heart {
+    height: 80px;
+    position: absolute;
+    top: 1px;
+    border-radius: 50%;
+}
+
+.heart-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section img {
+    width: 100%;
+    height: auto;
+    border-bottom: 2px solid rgb(159, 153, 139);
+}
+
+section p {
+    position: relative;
+    bottom: 200px;
+    left: 20px;
+}
+
+.transparent p {
+    height: auto;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(216, 113, 142, 0.4);
+    backdrop-filter: blur(10px);
+    padding: 20px;
+    color: rgb(255, 252, 252);
+    font-size: 24px;
+    font-family: "Josefin Sans", serif;
+}
+
+.maintxt {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    flex-direction: column;
+    position: relative;
+    bottom: 50px;
+}
+
+.maintxt p {
+    font-size: 20px;
+    padding-bottom: 15px;
+    color: rgb(246, 161, 175);
+    font-family: "Josefin Sans", serif;
+    overflow: hidden;
+    white-space: nowrap;
+    width: 0;
+    animation: typing 6s steps(60, end) forwards, blink 0.9s infinite;
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes blink {
+    50% {
+        border-color: transparent;
+    }
+}
+
+.flowers {
+    display: grid;
+    gap: 15px;
+    margin: 10px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-auto-rows: 300px;  
+}
+
+.flowers div {
+    border-radius: 25px;
+    background-color: transparent;
+    overflow: hidden;
+    position: relative;
+}
+
+.flower {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;  
+    border-radius: 4px;
+}
+
+.flowerimgcontanier {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.flowercontanier button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    width: 120px;
+    height: 50px;
+    background: transparent;
+    border: 2px solid white;
+    font-size: 16px;
+    opacity: 0;
+    z-index: 111;
+    transition: 0.5s;
+}
+
+.bow {
+    height: 50px;
+    width: 70px;
+    position: relative;
+    left: 50%;
+    margin-top: 5px;
+    transition: 0.5s;
+}
+
+.flowercontanier:hover .bow {
+    rotate: 20deg;
+}
+
+.flowercontanier:hover .purchase-button {
+    opacity: 1;
+}
+
+.flowercontanier:hover {
+    backdrop-filter: blur(25px);
+}
+
+footer {
+    border-top: 2px solid rgb(159, 153, 139);
+    height: auto;
+    width: 100%;
+    background: linear-gradient(to left, pink, white);
+    margin-top: 50px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+}
+
+.email {
+    display: flex;
+}
+
+footer p {
+    font-size: 18px;
+}
+
+.hellokitty {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.flowercontanier {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.flowerimgcontanier1 {
+    background-image: url(./img/\ flower1.png);
+}
+
+.flowerimgcontanier2 {
+    background-image: url(./img/\ flower2.png);
+}
+
+.flowerimgcontanier3 {
+    background-image: url(./img/\ flower3.png);
+}
+
+.flowerimgcontanier4 {
+    background-image: url(./img/\ flower4.png);
+}
+
+.flowerimgcontanier5 {
+    background-image: url(./img/\ flower5.png);
+}
+
+.flowerimgcontanier6 {
+    background-image: url(https://static.insales-cdn.com/images/products/1/6257/944068721/large_6455d0ea-2ffb-445c-8d6f-15a9aeab4da9.jpeg);
+}
+
+.flowerimgcontanier7 {
+    background-image: url(https://static.insales-cdn.com/images/products/1/4266/692990122/large_IMG_0115.jpeg);
+}
+
+.flowerimgcontanier8 {
+    background-image: url(./img/Image.jpg);
+}
+
+@media (min-width: 768px) {
+    header {
+        flex-direction: row;
+        padding: 50px;
+    }
+
+    .heart1 {
+        height: 100px;
+    }
+
+    nav {
+        gap: 25px;
+    }
+
+    .heart {
+        height: 100px;
+    }
+
+    section p {
+        bottom: 350px;
+        left: 70px;
+    }
+
+    .transparent p {
+        width: 400px;
+        font-size: 31px;
+    }
+
+    .maintxt {
+        bottom: 100px;
+    }
+
+    .maintxt p {
+        font-size: 25px;
+    }
+
+    .flowers {
+        gap: 30px;
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .flowercontanier button {
+        width: 150px;
+        height: 60px;
+        font-size: 18px;
+    }
+
+    .bow {
+        height: 70px;
+        width: 100px;
+        left: 75%;
+    }
+
+    footer {
+        flex-direction: row;
+        padding: 100px;
+    }
+
+    footer p {
+        font-size: 20px;
+    }
+}
