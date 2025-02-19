@@ -99,11 +99,6 @@ section p {
     font-size: 24px;
     font-family: "Josefin Sans", serif;
 }
-.transparent p {
-    width: 400px;
-    font-size: 31px;
-}
-
 
 .maintxt {
     text-align: center;
@@ -278,7 +273,7 @@ footer p {
     background-image: url(./img/Image.jpg);
 }
 
-@media (max-width: 468px) {
+@media (min-width: 768px) {
     header {
         flex-direction: row;
         padding: 50px;
@@ -301,7 +296,11 @@ footer p {
         left: 70px;
     }
 
- 
+    .transparent p {
+        width: 400px;
+        font-size: 31px;
+    }
+
     .maintxt {
         bottom: 100px;
     }
@@ -335,6 +334,7 @@ footer p {
     footer p {
         font-size: 20px;
     }
+
+ 
 }
-
-
+ 
