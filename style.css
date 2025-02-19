@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Delicious+Handrawn&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 
 * {
     padding: 0;
@@ -98,6 +99,11 @@ section p {
     font-size: 24px;
     font-family: "Josefin Sans", serif;
 }
+.transparent p {
+    width: 400px;
+    font-size: 31px;
+}
+
 
 .maintxt {
     text-align: center;
@@ -141,16 +147,17 @@ section p {
     gap: 15px;
     margin: 10px;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    grid-auto-rows: 300px;  
+    grid-auto-rows: 300px; 
 }
 
 .flowers div {
     border-radius: 25px;
-    background-color: transparent;
+    
     overflow: hidden;
     position: relative;
 }
 
+ 
 .flower {
     width: 100%;
     height: 100%;
@@ -170,15 +177,18 @@ section p {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: white;
     width: 120px;
     height: 50px;
-    background: transparent;
+    backdrop-filter: blur(10px);
     border: 2px solid white;
+    background: none;
     font-size: 16px;
     opacity: 0;
+    
     z-index: 111;
     transition: 0.5s;
+    color: white;
+    
 }
 
 .bow {
@@ -196,11 +206,11 @@ section p {
 
 .flowercontanier:hover .purchase-button {
     opacity: 1;
+    backdrop-filter: blur(10px);
+    font-family: "Open Sans", serif;
 }
 
-.flowercontanier:hover {
-    backdrop-filter: blur(25px);
-}
+ 
 
 footer {
     border-top: 2px solid rgb(159, 153, 139);
@@ -268,7 +278,7 @@ footer p {
     background-image: url(./img/Image.jpg);
 }
 
-@media (min-width: 768px) {
+@media (max-width: 468px) {
     header {
         flex-direction: row;
         padding: 50px;
@@ -291,11 +301,7 @@ footer p {
         left: 70px;
     }
 
-    .transparent p {
-        width: 400px;
-        font-size: 31px;
-    }
-
+ 
     .maintxt {
         bottom: 100px;
     }
@@ -330,3 +336,5 @@ footer p {
         font-size: 20px;
     }
 }
+
+
